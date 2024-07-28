@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="passwordGenerator.css">
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+      <div class="generator-content">
+        <p id="result" class="result"></p>
+        <button id="copy-password" class="btn copy-password-btn">Copy Password</button>
+      </div>
+      <p class="instruction">
+        Use the slider, and select from the options, below to lengthen your
+        password and stregthen your security. Password Length (6-64)
+      </p>
+      <div class="select-character">
+        <label for="range">Total Characters:</label>
+        <input type="range" id="range" min="6" max="64" value="10"/>
+        <span id="range-value">10</span>
+      </div>
+      <div class="checkboxes">
+        <div class="checkbox">
+          <input type="checkbox" id="checked" value="numbers"/>
+          <label for="">Include Numbers</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="checked" value="letters"/>
+          <label for="">Include Letters</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="checked" value="mixedCase"/>
+          <label for="">Include Mixed Case</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="checked" value="punctuation"/>
+          <label for="">Include Punctutation</label>
+        </div>
+      </div>
+      <button id="generate-password" class="btn generate-password-btn">Generate Password</button>
+    </div>
+    <div class="motivation">
+        <div class="section">
+            <h3>Do you use any of these weak passwords?</h3>
+            <ul>
+                <li>Password</li>
+                <li>123456</li>
+                <li>Qwerty</li>
+                <li>Your child's name</li>
+                <li>I always use the same password.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>Why are those passwords weak?</h3>
+            <ul>
+                <li>They're easy to guess or crack. Really easy!</li>
+                <li>If one of your logins is compromised, a hacker then has access to all your services.</li>
+            </ul>
+        </div>
+    </div>
+  </body>
+  <script src="passwordGenerator.js"></script>
+</html>
