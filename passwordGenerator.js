@@ -46,8 +46,10 @@ const generatePassword = () => {
 
 const copyPassword = () => {
     var copyText = document.getElementById("result");
-  navigator.clipboard.writeText(copyText.innerText);
-  alert("Copied the text: " + copyText.innerText);
+    navigator.clipboard.writeText(copyText.innerText);
+    copyText.innerText 
+        ? alert("Copied the text: " + copyText.innerText)
+        : alert("No text is there");
 }
 
 generateButton.addEventListener("click", generatePassword);
