@@ -7,7 +7,7 @@ inputRangeElement.addEventListener("input", () => {
   const updateSliderValue = document.getElementById("range-value");
   updateSliderValue.innerText = inputRangeElement.value;
   copyButton.innerText = "Copy Password";
-  resultElement.innerText = "";
+  resultElement.innerText = null;
 });
 
 const generatePassword = () => {
